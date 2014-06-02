@@ -5,3 +5,6 @@
 [submodule "content/plugins/acf"]
 	path = content/plugins/acf
 	url = https://github.com/elliotcondon/acf.git
+[submodule "content/plugins/contact-form-7"]
+	path = content/plugins/contact-form-7
+	url = https://github.com/wp-plugins/contact-form-7.git
