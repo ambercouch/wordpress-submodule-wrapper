@@ -11,3 +11,6 @@
 [submodule "content/plugins/wordpress-seo"]
 	path = content/plugins/wordpress-seo
 	url = https://github.com/Yoast/wordpress-seo.git
+[submodule "content/plugins/google-analytics-for-wordpress"]
+	path = content/plugins/google-analytics-for-wordpress
+	url = https://github.com/Yoast/google-analytics-for-wordpress.git
