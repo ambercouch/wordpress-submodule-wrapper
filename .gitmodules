@@ -8,3 +8,6 @@
 [submodule "content/plugins/contact-form-7"]
 	path = content/plugins/contact-form-7
 	url = https://github.com/wp-plugins/contact-form-7.git
+[submodule "content/plugins/wordpress-seo"]
+	path = content/plugins/wordpress-seo
+	url = https://github.com/Yoast/wordpress-seo.git
