@@ -17,3 +17,6 @@
 [submodule "content/plugins/limit-login-attempts"]
 	path = content/plugins/limit-login-attempts
 	url = https://github.com/wp-plugins/limit-login-attempts.git
+[submodule "content/plugins/threewp-activity-monitor"]
+	path = content/plugins/threewp-activity-monitor
+	url = https://github.com/ambercouch/threewp-activity-monitor.git
