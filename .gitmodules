@@ -14,3 +14,6 @@
 [submodule "content/plugins/google-analytics-for-wordpress"]
 	path = content/plugins/google-analytics-for-wordpress
 	url = https://github.com/Yoast/google-analytics-for-wordpress.git
+[submodule "content/plugins/limit-login-attempts"]
+	path = content/plugins/limit-login-attempts
+	url = https://github.com/wp-plugins/limit-login-attempts.git
