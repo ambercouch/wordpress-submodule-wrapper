@@ -1,0 +1,31 @@
+/**
+ *
+ * base layout styles
+ *
+ */
+html{
+
+}
+body{
+  font-size: 90%;
+  @include media-query(lap-and-up){
+    font-size: 100%
+  }
+}
+
+
+.site-main{
+
+}
+.container{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $half-spacing-unit;
+  padding-right: $half-spacing-unit;
+  @include media-query(desk){
+    max-width: 70em;
+    width: 90%
+  }
+}
+

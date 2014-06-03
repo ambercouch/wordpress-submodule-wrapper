@@ -1,0 +1,23 @@
+.content{
+  @extend .container;
+}
+
+.content__post-list,
+.content__post-archive,
+.content__single-post,
+.content__single-page,
+.content__search-list{
+  @extend .one-whole;
+  @extend .lap-two-thirds;
+  @extend .desk-four-fifths;
+}
+.content__search-list{
+  @extend .one-whole;
+  @extend .lap-two-thirds;
+  @extend .desk-four-fifths;
+}
+.content__widget-area{
+  @extend .one-whole;
+  @extend .lap-one-third;
+  @extend .desk-one-fifth;
+}

@@ -1,0 +1,69 @@
+
+%menu--responsive-toggle{
+
+  .menu--responsive-toggle__toggle{
+    float: right;
+    display: block;
+    padding: 0.5em 2.75em .5em .5em;
+margin: 0.5em 0;
+    line-height: 1;
+    position:relative;
+border:solid 1px rgba(#000, 0.2);
+    @include media-query(desk){
+      display:none;
+    }
+    &:after{
+      content :'';
+      width: 1.75em;
+      border-bottom: solid (3/17) * 1em #000;
+      border-top: solid (3/17) * 1em #000;
+      position: absolute;
+      height: (15/17) * 1em;
+      right: 0.5em;
+    }
+    &:before{
+      content :'';
+      width: 1.75em;
+      border-bottom: solid (3/17) * 1em #000;
+      border-top: solid (3/17) * 1em #000;
+      position: absolute;
+      height: (15/17) * 1em;
+      right: 0.5em;
+      margin-top: (6/17) * 1em;
+    }
+  }
+  nav {
+    clear: both;
+    @include vendor(transition, all 0.5s);
+    overflow: hidden;
+    max-height: 0;
+    @include media-query(desk){
+      overflow: visible;
+      max-height:none;
+    }
+    &.active{
+      max-height: 30em;
+    }
+    > ul{
+
+      @extend .nav--stacked;
+      border-top: 1px solid #808080;
+      @include media-query(desk){
+        border-top: none;
+      }
+      > .menu-item{
+        @include media-query(desk){
+          display: inline-block;
+        }
+        a{
+          padding: 0.8em;
+          border-bottom: 1px solid #808080;
+          @include media-query(desk){
+            border-bottom: none;
+          }
+
+        }
+      }
+    }
+  }
+}

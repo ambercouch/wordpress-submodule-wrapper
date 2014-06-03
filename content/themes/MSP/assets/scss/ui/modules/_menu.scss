@@ -1,0 +1,47 @@
+.menu{
+  @extend .nav;
+}
+
+.menu--site{
+  @extend .menu;
+  @extend %menu--responsive-toggle;
+}
+.menu--site__menu-list{
+  @extend .menu;
+  @extend .nav--block;
+  @extend .multi-dropdown;
+  @extend %has-sep;
+  margin-bottom: 0;
+  a{
+    text-decoration: none;
+    color: $brand-col-1;
+    background: $brand-col-4;
+    text-decoration:none !important;
+    &:hover{
+      background: darken($brand-col-4, 10%);
+      text-decoration:none !important;
+    }
+  }
+}
+
+
+%has-sep{
+  a{
+    border-right: solid 1px;
+  }
+  .menu-item{
+    a{
+      border: none;
+      border-left: none !important;
+    }
+  }
+
+  .menu-item:first-child{
+    a{
+      border-left: solid 1px;
+
+    }
+  }
+}
+
+

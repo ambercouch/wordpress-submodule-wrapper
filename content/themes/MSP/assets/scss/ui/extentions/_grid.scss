@@ -1,0 +1,34 @@
+/**
+ *
+ * .grid styles
+ *
+ */
+
+.grid{
+
+  /* set the font size to 0 to fix the inline block white space issue (doesn't work on old android')*/
+  font-size: 0;
+
+  > * {
+
+    /* Don't need to use the grid item class any more */
+    @extend .grid__item;
+
+    /* reset to the base font size */
+    font-size: $base-font-size;
+
+    /* use rem if supported */
+    font-size: 1rem;
+    > *{
+
+      /* if rems not supported resize the text now */
+      font-size: 90%;
+      @include media-query(lap-and-up){
+        font-size: 100%
+      }
+
+      /* if rems is supported reset */
+      font-size: 1rem;
+    }
+  }
+}

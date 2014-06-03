@@ -1,0 +1,12 @@
+/*
+ * Typography
+ * set font size ems on text nodes P, H* LI, TD etc
+ * Set font size rems on containers / modules etc
+ */
+
+/*
+ * Set relative bottom margin
+ */
+@include headings(){
+  margin-bottom: 0.75em;
+}
