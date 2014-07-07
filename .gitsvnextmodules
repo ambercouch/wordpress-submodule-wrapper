@@ -1,0 +1,11 @@
+[submodule "content/plugins/widget-settings-importexport"]
+	path = content/plugins/widget-settings-importexport
+	owner = content/plugins
+	url = http://plugins.svn.wordpress.org/widget-settings-importexport
+	revision = 739623
+	branch = tags/1.2
+	fetch = trunk:refs/remotes/svn/trunk
+	branches = branches/*:refs/remotes/svn/branches/*
+	tags = tags/*:refs/remote-tags/svn/tags/*
+	remote = svn
+	type = dir
