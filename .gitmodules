@@ -20,3 +20,6 @@
 [submodule "content/plugins/threewp-activity-monitor"]
 	path = content/plugins/threewp-activity-monitor
 	url = https://github.com/ambercouch/threewp-activity-monitor.git
+[submodule "content/themes/flat-theme"]
+	path = content/themes/flat-theme
+	url = git@bitbucket.org:ambercouch/flat-theme
