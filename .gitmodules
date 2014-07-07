@@ -23,3 +23,6 @@
 [submodule "content/themes/flat-theme"]
 	path = content/themes/flat-theme
 	url = git@bitbucket.org:ambercouch/flat-theme
+[submodule "content/themes/mm-template-1-a"]
+	path = content/themes/mm-template-1-a
+	url = git@bitbucket.org:ambercouch/flat-theme
