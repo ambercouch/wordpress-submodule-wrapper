@@ -20,6 +20,3 @@
 [submodule "content/plugins/threewp-activity-monitor"]
 	path = content/plugins/threewp-activity-monitor
 	url = https://github.com/ambercouch/threewp-activity-monitor.git
-[submodule "content/themes/ac-inuk"]
-	path = content/themes/ac-inuk
-	url = https://github.com/ambercouch/ac-inuk.git
