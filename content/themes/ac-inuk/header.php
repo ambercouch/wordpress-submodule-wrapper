@@ -21,7 +21,7 @@
   </head>
 
   <body <?php body_class(); ?> <?php ac_body_data(); ?>>
-    <?php (AC_MENU_ABOVE_HEADER === TRUE) ? get_template_part('templates/snippets/site__navigation--main') : ''; ?>
+    <?php // (AC_MENU_ABOVE_HEADER === TRUE) ? get_template_part('templates/snippets/site__navigation--main') : ''; ?>
     <div id="page" class="hfeed site">
       <?php do_action('before'); ?>
       <header class="site__header--master" id="masthead"   role="banner">
@@ -36,6 +36,7 @@
                 <span class="branding__description"><?php bloginfo('description'); ?></span>
               <?php endif; ?>
             </div><!-- /.branding -->
+            <?php get_template_part('templates/snippets/header--master__widget-area'); ?>
           </div><!-- /.header--master__branding -->
         </div><!-- /.header--master -->
       </header><!-- /.site__header -->
