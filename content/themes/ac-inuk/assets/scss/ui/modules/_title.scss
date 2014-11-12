@@ -1,0 +1,29 @@
+/*
+ * .title module
+ */
+
+/*
+ * Just a base class to extend all modifiers
+ * Remove the margin and uderline
+ */
+.title{
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+/* colours for the article titles */
+.title--article{
+  @extend .title;
+  color: $brand-col-2;
+  &:hover{
+    color: $brand-col-1;
+  }
+}
+
+/* colours and size for the widget titles */
+.title--widget{
+  @extend .title;
+  @extend .epsilon;
+  color: $brand-col-2;
+
+}

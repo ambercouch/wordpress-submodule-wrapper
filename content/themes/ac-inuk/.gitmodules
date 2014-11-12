@@ -1,0 +1,6 @@
+[submodule "assets/scss/inuit.css"]
+	path = assets/scss/inuit.css
+	url = https://github.com/csswizardry/inuit.css.git
+[submodule "assets/scss/ui/modules/MultiDropdown"]
+	path = assets/scss/ui/modules/MultiDropdown
+	url = https://github.com/SamuelTurner/MultiDropdown.git

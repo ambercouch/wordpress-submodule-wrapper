@@ -1,0 +1,21 @@
+.branding{
+  .branding__title{
+    @extend .kilo;
+    margin-bottom: 0;
+    font-weight: bold;
+    line-height: 1.333em;
+    color: $brand-col-2;
+    a{
+      color: $brand-col-2;
+      text-decoration: none;
+    }
+  }
+  .branding__description{
+    @extend .epsilon;
+    color: $brand-col-2;
+    margin-bottom: 0;
+    font-weight: normal;
+
+  }
+}
+

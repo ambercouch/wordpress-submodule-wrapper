@@ -1,0 +1,18 @@
+
+.page{
+  @extend %post__img;
+}
+
+.page__content{
+  @extend .cf;
+  p{
+    max-width: 33em;
+
+  }
+  li{
+    max-width: 33em;
+  }
+  dd{
+    max-width: 33em;
+  }
+}

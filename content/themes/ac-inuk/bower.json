@@ -1,0 +1,22 @@
+{
+  "name": "ac-inuk",
+  "version": "0.0.2",
+  "homepage": "https://github.com/ambercouch/ac-inuk",
+  "authors": [
+    "Richiearnold <richard@ambercouch.co.uk>"
+  ],
+  "description": "wp theme",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "inuit.css": "~5.0.1"
+  }
+}

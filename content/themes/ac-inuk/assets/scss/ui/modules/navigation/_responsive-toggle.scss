@@ -1,0 +1,47 @@
+
+%menu--responsive-toggle{
+
+  .menu--responsive-toggle__toggle{
+    float: right;
+    display: block;
+    padding: 0.8em;
+    line-height: 1;
+    @include media-query(lap-and-up){
+      display:none;
+    }
+  }
+  nav {
+    clear: both;
+    @include vendor(transition, all 0.5s);
+    overflow: hidden;
+    max-height: 0;
+    @include media-query(lap-and-up){
+      overflow: visible;
+      max-height:none;
+    }
+    &.active{
+      max-height: 30em;
+    }
+    > ul{
+
+      @extend .nav--stacked;
+      border-top: 1px solid #808080;
+      @include media-query(lap-and-up){
+        border-top: none;
+      }
+      > .menu-item{
+        @include media-query(lap-and-up){
+          display: inline-block;
+        }
+        a{
+          padding: 0.8em;
+          border-bottom: 1px solid #808080;
+          @include media-query(lap-and-up){
+            border-bottom: none;
+          }
+
+        }
+      }
+    }
+  }
+}
