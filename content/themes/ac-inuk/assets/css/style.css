@@ -16,7 +16,7 @@
     VARS.SCSS
 \*------------------------------------*/
 /**
- * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+ * Any variables you find set in inuit.cssÔÇÖ `_vars.scss` that you do not wish to
  * keep, simply redefine here. This means that if inuit.css, for example, sets
  * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
  * that variable in this file. inuit.css ignores its own variables in favour of
@@ -27,7 +27,7 @@
     $OBJECTS-AND-ABSTRACTIONS
 \*------------------------------------*/
 /**
- * All of inuit.css’ objects and abstractions are initially turned off by
+ * All of inuit.cssÔÇÖ objects and abstractions are initially turned off by
  * default. This means that you start any project with as little as possible,
  * and introducing objects and abstractions is as simple as switching the
  * following variables to `true`.
@@ -36,7 +36,7 @@
     $OVERRIDES
 \*------------------------------------*/
 /**
- * Place any variables that should override inuit.css’ defaults here.
+ * Place any variables that should override inuit.cssÔÇÖ defaults here.
  */
 /*------------------------------------*\
     $CUSTOM
@@ -98,7 +98,7 @@
     $CONTENTS
 \*------------------------------------*/
 /**
- * CONTENTS............You’re reading it!
+ * CONTENTS............YouÔÇÖre reading it!
  * WARNING.............Here be dragons!
  * IMPORTS.............Begin importing the sections below
  *
@@ -176,7 +176,7 @@
     $DEFAULTS
 \*------------------------------------*/
 /**
- * inuit.css’ default variables. Redefine these in your `_vars.scss` file (found
+ * inuit.cssÔÇÖ default variables. Redefine these in your `_vars.scss` file (found
  * in the inuit.css-web-template) to override them.
  */
 /*------------------------------------*\
@@ -203,7 +203,7 @@
  * Base font-family.
  */
 /**
- * Default colour for objects’ borders etc.
+ * Default colour for objectsÔÇÖ borders etc.
  */
 /*------------------------------------*\
     $RESPONSIVE
@@ -241,7 +241,7 @@
  * English quote marks?
  */
 /**
- * If you want English quotes then please do not edit these; they’re only here
+ * If you want English quotes then please do not edit these; theyÔÇÖre only here
  * because Sass needs them.
  */
 /**
@@ -360,11 +360,11 @@
 /**
  * Media query mixin.
  *
- * It’s not great practice to define solid breakpoints up-front, preferring to
- * modify your design when it needs it, rather than assuming you’ll want a
- * change at ‘mobile’. However, as inuit.css is required to take a hands off
+ * ItÔÇÖs not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming youÔÇÖll want a
+ * change at ÔÇÿmobileÔÇÖ. However, as inuit.css is required to take a hands off
  * approach to design decisions, this is the closest we can get to baked-in
- * responsiveness. It’s flexible enough to allow you to set your own breakpoints
+ * responsiveness. ItÔÇÖs flexible enough to allow you to set your own breakpoints
  * but solid enough to be frameworkified.
  *
  * We define some broad breakpoints in our vars file that are picked up here
@@ -760,7 +760,7 @@ table {
  * As per: csswizardry.com/2011/10/reset-restarted
  */
 /**
-* Let’s make the box model all nice, shall we...?
+* LetÔÇÖs make the box model all nice, shall we...?
 */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -805,7 +805,7 @@ ins {
 }
 
 /**
- * So that `alt` text is visually offset if images don’t load.
+ * So that `alt` text is visually offset if images donÔÇÖt load.
  */
 img {
   font-style: italic;
@@ -1049,7 +1049,7 @@ hgroup .hN {
  * Inline quotes.
  */
 q {
-  quotes: "\2018" "\2019" "\201C " "\201D ";
+  quotes: "‘" "’" "\\201C " "\\201D ";
 }
 q:before {
   content: "\2018";
@@ -1069,10 +1069,10 @@ q q:after {
 }
 
 blockquote {
-  quotes: "\201C " "\201D ";
+  quotes: "\\201C " "\\201D ";
 }
 blockquote p:before {
-  content: "\201C ";
+  content: "\\201C ";
   content: open-quote;
 }
 blockquote p:after {
@@ -1080,7 +1080,7 @@ blockquote p:after {
   content: no-close-quote;
 }
 blockquote p:last-of-type:after {
-  content: "\201D ";
+  content: "\\201D ";
   content: close-quote;
 }
 blockquote q:before {
@@ -1103,7 +1103,7 @@ blockquote q:after {
  */
 blockquote {
   /**
-   * .4em is roughly equal to the width of the opening “ that we wish to hang.
+   * .4em is roughly equal to the width of the opening ÔÇ£ that we wish to hang.
    */
   text-indent: -0.41em;
 }
@@ -1168,7 +1168,7 @@ pre mark {
  *
  * 1. Make the list look like code.
  * 2. Give the list flush numbers with a leading zero.
- * 3. Make sure lines of code don’t wrap.
+ * 3. Make sure lines of code donÔÇÖt wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
 .line-numbers {
@@ -1498,7 +1498,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
 }
 .table--bordered th:empty,
 .table--bordered td:empty {
@@ -1682,7 +1682,7 @@ label,
    <small class=extra-help>.edu emails only</small>
  *
  * We leave the help text in the document flow and merely set it to
- * `visibility:hidden;`. This means that it won’t interfere with anything once
+ * `visibility:hidden;`. This means that it wonÔÇÖt interfere with anything once
  * it reappears.
  *
  */
@@ -2031,15 +2031,15 @@ label,
 }
 
 /**
- * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
- * access to these classes. You can define at which breakpoint you’d like an
+ * If you have set `$responsive` to ÔÇÿtrueÔÇÖ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoint youÔÇÖd like an
  * element to be a certain size, e.g.:
  *
  * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
  *
- * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
- * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
- * at ‘mobile’ sizes.
+ * This would create a `div` that, at ÔÇÿdesktopÔÇÖ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ÔÇÿtabletÔÇÖ sizes, and goes full width
+ * at ÔÇÿmobileÔÇÖ sizes.
  *
  * Demo: jsfiddle.net/inuitcss/WS4Ge
  *
@@ -2673,7 +2673,7 @@ label,
   }
 }
 /**
- * If you have set the additional `$responsive-extra` variable to ‘true’ in
+ * If you have set the additional `$responsive-extra` variable to ÔÇÿtrueÔÇÖ in
  * `_vars.scss` then you now have access to the following class available to
  * accomodate much larger screen resolutions.
  */
@@ -2698,12 +2698,12 @@ label,
  * any element using a handy helper class.
  */
 .brand {
-  font-family: "Helvetica Neue", sans-serif!important;
+  font-family: Helvetica Neue, sans-serif!important;
   color: #4a8ec2!important;
 }
 
 .brand-face {
-  font-family: "Helvetica Neue", sans-serif!important;
+  font-family: Helvetica Neue, sans-serif!important;
 }
 
 .brand-color,
@@ -2716,7 +2716,7 @@ label,
 \*------------------------------------*/
 /**
  * A series of helper classes to use arbitrarily. Only use a helper class if an
- * element/component doesn’t already have a class to which you could apply this
+ * element/component doesnÔÇÖt already have a class to which you could apply this
  * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
  * that ruleset as opposed to adding the `.float--left` class to the markup.
  *
@@ -2999,7 +2999,7 @@ label,
  *
  */
 .go:after {
-  content: "\00A0" "\00BB" !important;
+  content: " " "»" !important;
 }
 
 /**
@@ -3300,7 +3300,7 @@ h6, .zeta {
 }
 
 .site {
-  background: #dddddd;
+  background: #ddd;
 }
 
 .site__header--master {
@@ -3308,7 +3308,7 @@ h6, .zeta {
 }
 
 .site__navigation--main {
-  background: #bbbbbb;
+  background: #bbb;
 }
 
 .site__content {
@@ -3317,7 +3317,7 @@ h6, .zeta {
 
 .site__footer {
   padding: 25px 0;
-  background: #666666;
+  background: #666;
 }
 
 /*
@@ -3345,24 +3345,34 @@ h6, .zeta {
   margin-bottom: 0;
 }
 .header--article .header--article__title {
-  color: #333333;
-  border-bottom: 1px solid #333333;
+  color: #333;
+  border-bottom: 1px solid #333;
   margin-bottom: 0.25em;
   padding-bottom: 0.25em;
+}
+
+/* Just a container */
+.header--master {
+  text-align: center;
+}
+
+/* ? */
+.header--master__branding {
+  overflow: hidden;
 }
 
 .branding .branding__title {
   margin-bottom: 0;
   font-weight: bold;
   line-height: 1.333em;
-  color: #333333;
+  color: #333;
 }
 .branding .branding__title a {
-  color: #333333;
+  color: #333;
   text-decoration: none;
 }
 .branding .branding__description {
-  color: #333333;
+  color: #333;
   margin-bottom: 0;
   font-weight: normal;
 }
@@ -3394,8 +3404,8 @@ h6, .zeta {
 }
 .menu--site__menu-list a {
   text-decoration: none;
-  color: black;
-  background: #bbbbbb;
+  color: #000;
+  background: #bbb;
   text-decoration: none !important;
 }
 .menu--site__menu-list a:hover {
@@ -3424,7 +3434,7 @@ h6, .zeta {
   padding: 12.5px;
   padding-bottom: 25px;
   margin-bottom: 25px;
-  border-bottom: solid 1px #bbbbbb;
+  border-bottom: solid 1px #bbb;
 }
 .post .post__header {
   margin-bottom: 25px;
@@ -3534,15 +3544,15 @@ h6, .zeta {
 
 /* colours for the article titles */
 .title--article {
-  color: #333333;
+  color: #333;
 }
 .title--article:hover {
-  color: black;
+  color: #000;
 }
 
 /* colours and size for the widget titles */
 .title--widget {
-  color: #333333;
+  color: #333;
 }
 
 .meta--footer .meta--footer__cat-links:after {
@@ -3593,7 +3603,7 @@ and open the template in the editor.
 }
 
 .navigation--main__menu .multi-dropdown ul, .navigation--main__menu .menu--site__menu-list ul {
-  background: #bbbbbb;
+  background: #bbb;
   z-index: 999;
 }
 .navigation--main__menu .multi-dropdown ul li a, .navigation--main__menu .menu--site__menu-list ul li a {
@@ -3750,3 +3760,5 @@ removes max-widths from p that have no text node
 .is-empty {
   max-width: none !important;
 }
+
+/*# sourceMappingURL=style.css.map */
