@@ -3,13 +3,36 @@ ACINUK = {
     init: function() {
       console.log('common');
       
+      var $win = jQuery(window),
+          win_height = $win.height(),
+          $header = jQuery('.header--master'),
+          header_height = $header.height(),
+          header_top = (win_height / 2) - (header_height / 2);
+      
+      //set header height
+      jQuery('#masthead').height(win_height);
+      $header.css('margin-top', header_top);
+      
+      //add vegas bg
       $(function() {
         $.vegas({
           src:'/content/themes/ac-inuk/assets/images/vegas/background.jpg'
         })('overlay', {
         src:'/content/themes/ac-inuk/assets/images/vegas/overlays/13.png'
         });
-});
+      });
+      
+      
+      
+      
+      jQuery(window).on('resize', function(){
+        win_height = $win.height();
+        header_height = $header.height();
+        header_top = (win_height / 2) - (header_height / 2);
+        //set header height
+        jQuery('#masthead').height(win_height);
+        $header.css('margin-top', header_top);
+      });
 
       if (jQuery('#nav-main').data('responsive-clone')) {
         $clone_nav = jQuery('#nav-main').clone();

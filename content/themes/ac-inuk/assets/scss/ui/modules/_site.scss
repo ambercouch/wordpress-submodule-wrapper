@@ -1,8 +1,11 @@
 .site{
   background: transparent;
+  overflow: hidden;
 }
 .site__header--master{
-  padding: $base-spacing-unit 0;
+  padding: 0 0 $base-spacing-unit 0;
+   overflow: hidden;
+  
 }
 .site__navigation--main{
   background: $brand-col-4;

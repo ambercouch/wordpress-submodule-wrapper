@@ -3301,10 +3301,12 @@ h6, .zeta {
 
 .site {
   background: transparent;
+  overflow: hidden;
 }
 
 .site__header--master {
-  padding: 25px 0;
+  padding: 0 0 25px 0;
+  overflow: hidden;
 }
 
 .site__navigation--main {
