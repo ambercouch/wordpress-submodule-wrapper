@@ -1,0 +1,14 @@
+/* Just a container */
+.header--master{
+  @extend .header;
+  @extend .container;
+  text-align: center;
+}
+
+/* ? */
+.header--master__branding{
+  @extend .grid;
+  overflow: hidden;
+
+}
+

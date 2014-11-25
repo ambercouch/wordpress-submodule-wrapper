@@ -2,6 +2,14 @@ ACINUK = {
   common: {
     init: function() {
       console.log('common');
+      
+      $(function() {
+        $.vegas({
+          src:'/content/themes/ac-inuk/assets/images/vegas/background.jpg'
+        })('overlay', {
+        src:'/content/themes/ac-inuk/assets/images/vegas/overlays/13.png'
+        });
+});
 
       if (jQuery('#nav-main').data('responsive-clone')) {
         $clone_nav = jQuery('#nav-main').clone();

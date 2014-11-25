@@ -55,7 +55,14 @@ module.exports = function(grunt) {
 
             }
           }
-  }
+        },
+        uglify: {
+          my_target: {
+            files: {
+              'assets/js/plugins.js': ['assets/vendor/vegas/dist/jquery.vegas.js']
+            }
+          }
+        }
 
     });
 
