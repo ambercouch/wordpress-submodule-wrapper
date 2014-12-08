@@ -29,7 +29,7 @@
           <div class="header--master__branding">
             <div class="branding">
               <?php if (is_home() || is_front_page()) : ?>
-                <h1 class="branding__title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+                <h1 class="branding__title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mynt-apps-logo-white-rgb.svg" /></a></h1>
                 <h2 class="branding__description"><?php bloginfo('description'); ?></h2>
               <?php else : ?>
                 <div class="branding__title"><a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a></div>

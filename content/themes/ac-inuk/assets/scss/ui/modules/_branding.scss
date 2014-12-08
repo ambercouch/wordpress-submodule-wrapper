@@ -5,17 +5,25 @@
     font-weight: bold;
     line-height: 1.333em;
     color: $brand-col-2;
+    img{
+      display: inline-block;
+    }
     a{
       color: $brand-col-2;
       text-decoration: none;
     }
   }
   .branding__description{
-    @extend .epsilon;
-    color: $brand-col-2;
-    margin-bottom: 0;
+    @extend .beta;
+    color: white;
     font-weight: normal;
-
+    border-top: dotted #fff 1px;
+    border-bottom: dotted #fff 1px;
+    padding: 0.2em;
+    margin: 0 auto $base-spacing-unit;
+    width: 75%;
+    text-transform: uppercase;
+    
   }
 }
 

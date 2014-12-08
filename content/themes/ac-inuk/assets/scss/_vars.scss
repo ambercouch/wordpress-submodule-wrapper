@@ -67,9 +67,47 @@ $base-line-height:  25px;
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+/*
+@color-primary-0: #204875;	 Main Primary color 
+@color-primary-1: #5578A0;
+@color-primary-2: #355C88;
+@color-primary-3: #0F355F;
+@color-primary-4: #042244;
+
+@color-secondary-1-0: #B34C26;	 Main Secondary color (1) 
+@color-secondary-1-1: #F59A78;
+@color-secondary-1-2: #D06C46;
+@color-secondary-1-3: #92310D;
+@color-secondary-1-4: #681C00;
+
+@color-secondary-2-0: #1A7C4F;	 Main Secondary color (2) 
+@color-secondary-2-1: #53A982;
+@color-secondary-2-2: #319065;
+@color-secondary-2-3: #09653B;
+@color-secondary-2-4: #004827;
+
+@color-complement-0: #B37B26;	 Main Complement color 
+@color-complement-1: #F5C478;
+@color-complement-2: #D09A46;
+@color-complement-3: #925E0D;
+@color-complement-4: #683F00;
+*/
+
+$mynt-blue: #204875;
+$mynt-blue--light: #5578A0;
+$mynt-blue--dark: #042244;
+
+$mynt-green: #186f66;
+$mynt-green--light: #53A982;
+$mynt-green--dark: #004827;
+
 $brand-col-1: #000;
-$brand-col-2: #333;
-$brand-col-3: #666;
+$brand-col-2: $mynt-blue;
+$brand-col-2--light: $mynt-blue--light;
+$brand-col-2--dark: $mynt-blue--dark;
+$brand-col-3: $mynt-green;
+$brand-col-3--light: $mynt-green--light;
+$brand-col-3--dark: $mynt-green--dark;
 $brand-col-4: #bbb;
 $brand-col-5: #ddd;
 $brand-col-6: #fff;

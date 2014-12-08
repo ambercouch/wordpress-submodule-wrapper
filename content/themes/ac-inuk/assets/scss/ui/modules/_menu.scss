@@ -1,5 +1,21 @@
 .menu{
   @extend .nav;
+  .header--master__widget-area &{
+    @extend .nav--block;
+    a{
+      text-decoration: none;
+      color: white;
+      border:solid 1px;
+      margin: 0 0.5em;
+      text-transform: uppercase;
+      border-radius: $brand-round;
+      text-shadow: 1px 1px 1px rgba(black, 0.6);
+      background: rgba(black, 0.2);
+      &:hover{
+        background: $brand-col-3;
+      }
+    }
+  }
 }
 
 .menu--site{

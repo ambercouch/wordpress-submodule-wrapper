@@ -44,6 +44,31 @@
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
+/*
+@color-primary-0: #204875;	 Main Primary color 
+@color-primary-1: #5578A0;
+@color-primary-2: #355C88;
+@color-primary-3: #0F355F;
+@color-primary-4: #042244;
+
+@color-secondary-1-0: #B34C26;	 Main Secondary color (1) 
+@color-secondary-1-1: #F59A78;
+@color-secondary-1-2: #D06C46;
+@color-secondary-1-3: #92310D;
+@color-secondary-1-4: #681C00;
+
+@color-secondary-2-0: #1A7C4F;	 Main Secondary color (2) 
+@color-secondary-2-1: #53A982;
+@color-secondary-2-2: #319065;
+@color-secondary-2-3: #09653B;
+@color-secondary-2-4: #004827;
+
+@color-complement-0: #B37B26;	 Main Complement color 
+@color-complement-1: #F5C478;
+@color-complement-2: #D09A46;
+@color-complement-3: #925E0D;
+@color-complement-4: #683F00;
+*/
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
@@ -936,7 +961,7 @@ h1, .alpha {
   line-height: 1.38889;
 }
 
-h2, .beta {
+h2, .beta, .branding .branding__description {
   font-size: 30px;
   font-size: 1.76471rem;
   line-height: 1.66667;
@@ -954,7 +979,7 @@ h4, .delta {
   line-height: 1.25;
 }
 
-h5, .epsilon, .branding .branding__description, .title--widget {
+h5, .epsilon, .title--widget {
   font-size: 16px;
   font-size: 0.94118rem;
   line-height: 1.5625;
@@ -1835,7 +1860,7 @@ label,
    </ul>
  *
  */
-.nav--block, .menu--site__menu-list {
+.nav--block, .header--master__widget-area .menu, .header--master__widget-area .menu--site, .header--master__widget-area .menu--site__menu-list, .menu--site__menu-list {
   line-height: 1;
   /**
    * Remove whitespace caused by `inline-block`.
@@ -1844,11 +1869,11 @@ label,
   word-spacing: -0.43em;
   white-space: nowrap;
 }
-.nav--block > li, .menu--site__menu-list > li {
+.nav--block > li, .header--master__widget-area .menu > li, .header--master__widget-area .menu--site > li, .header--master__widget-area .menu--site__menu-list > li, .menu--site__menu-list > li {
   letter-spacing: normal;
   word-spacing: normal;
 }
-.nav--block > li > a, .menu--site__menu-list > li > a {
+.nav--block > li > a, .header--master__widget-area .menu > li > a, .header--master__widget-area .menu--site > li > a, .header--master__widget-area .menu--site__menu-list > li > a, .menu--site__menu-list > li > a {
   padding: 12.5px;
 }
 
@@ -3199,20 +3224,20 @@ h1, .alpha {
   }
 }
 
-h2, .beta {
+h2, .beta, .branding .branding__description {
   font-size: 21.42857px;
   font-size: 1.2605rem;
   line-height: 1.66667;
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  h2, .beta {
+  h2, .beta, .branding .branding__description {
     font-size: 25px;
     font-size: 1.47059rem;
     line-height: 1.66667;
   }
 }
 @media only screen and (min-width: 1024px) {
-  h2, .beta {
+  h2, .beta, .branding .branding__description {
     font-size: 30px;
     font-size: 1.76471rem;
     line-height: 1.66667;
@@ -3252,13 +3277,13 @@ h4, .delta {
   }
 }
 
-h5, .epsilon, .branding .branding__description, .title--widget, .test {
+h5, .epsilon, .title--widget, .test {
   font-size: 14.54545px;
   font-size: 0.85561rem;
   line-height: 1.5625;
 }
 @media only screen and (min-width: 481px) {
-  h5, .epsilon, .branding .branding__description, .title--widget, .test {
+  h5, .epsilon, .title--widget, .test {
     font-size: 16px;
     font-size: 0.94118rem;
     line-height: 1.5625;
@@ -3319,7 +3344,7 @@ h6, .zeta {
 
 .site__footer {
   padding: 25px 0;
-  background: #666;
+  background: #186f66;
 }
 
 /*
@@ -3347,8 +3372,8 @@ h6, .zeta {
   margin-bottom: 0;
 }
 .header--article .header--article__title {
-  color: #333;
-  border-bottom: 1px solid #333;
+  color: #204875;
+  border-bottom: 1px solid #204875;
   margin-bottom: 0.25em;
   padding-bottom: 0.25em;
 }
@@ -3367,16 +3392,24 @@ h6, .zeta {
   margin-bottom: 0;
   font-weight: bold;
   line-height: 1.333em;
-  color: #333;
+  color: #204875;
+}
+.branding .branding__title img {
+  display: inline-block;
 }
 .branding .branding__title a {
-  color: #333;
+  color: #204875;
   text-decoration: none;
 }
 .branding .branding__description {
-  color: #333;
-  margin-bottom: 0;
+  color: white;
   font-weight: normal;
+  border-top: dotted #fff 1px;
+  border-bottom: dotted #fff 1px;
+  padding: 0.2em;
+  margin: 0 auto 25px;
+  width: 75%;
+  text-transform: uppercase;
 }
 
 .navigation, .navigation--main {
@@ -3399,6 +3432,20 @@ h6, .zeta {
   [id=nav-main][data-responsive-clone] {
     display: block;
   }
+}
+
+.header--master__widget-area .menu a, .header--master__widget-area .menu--site a, .header--master__widget-area .menu--site__menu-list a {
+  text-decoration: none;
+  color: white;
+  border: solid 1px;
+  margin: 0 0.5em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
+}
+.header--master__widget-area .menu a:hover, .header--master__widget-area .menu--site a:hover, .header--master__widget-area .menu--site__menu-list a:hover {
+  background: #186f66;
 }
 
 .menu--site__menu-list {
@@ -3546,7 +3593,7 @@ h6, .zeta {
 
 /* colours for the article titles */
 .title--article {
-  color: #333;
+  color: #204875;
 }
 .title--article:hover {
   color: #000;
@@ -3554,7 +3601,7 @@ h6, .zeta {
 
 /* colours and size for the widget titles */
 .title--widget {
-  color: #333;
+  color: #204875;
 }
 
 .meta--footer .meta--footer__cat-links:after {
