@@ -12,8 +12,8 @@
 
     <?php // print_R(get_sub_field('page')); ?>
 
-    <section class="page-section">
-      <article class="page-section--id-<?php echo $section->ID ?>" id="post-<?php echo $section->ID; ?>" >
+    <section class="page-section--id-<?php echo $section->ID ?> background--<?php the_sub_field('background_class') ?>">
+      <article class="page-section__content" id="post-<?php echo $section->ID; ?>" >
         <header class="page-section__header">
           <div class="header--page-section">
             <h1 class="header--page-section__title">
@@ -21,10 +21,11 @@
             </h1>
           </div>
         </header><!-- /.page__header -->
+
+        <div class="page-section__body">
+          <?php echo $section->post_content; ?>
+        </div><!-- /.page-section__content -->
       </article>
-      <div class="page-section__content">
-        <?php echo $section->post_content; ?>
-      </div><!-- /.page-section__content -->
     </section>
 
   <?php endwhile; ?>

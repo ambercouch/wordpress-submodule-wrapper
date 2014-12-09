@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Dec-2014, 15:09:56
+    Author     : Richard
+*/
+
+.page-section__content{
+  @extend .container;
+  padding: $base-spacing-unit 0 ;
+}
+.background--brand-col-1{
+  background: $brand-col-1;
+  color: white;
+}
+.background--brand-col-2{
+  background: $brand-col-2--light;
+  color: white;
+}
+.background--brand-col-3{
+  background: $brand-col-3--light;
+  color: white;
+}
