@@ -18,5 +18,5 @@ if (!defined('WP_CONTENT_URL')) {
   define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/content');
 }
 if (!defined('UPLOADS')) {
-  define('UPLOADS', 'http://' . $_SERVER['SERVER_NAME'] . '/content/uploads');
+  define('UPLOADS', 'content/uploads');
 }
