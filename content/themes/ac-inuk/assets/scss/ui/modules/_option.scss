@@ -1,0 +1,33 @@
+.options{
+  margin-top: $base-spacing-unit;
+  .this-or-this__this{
+    vertical-align: top;
+  }
+
+}
+.option{
+  background: white;
+  color:#333;
+
+}
+.option__header{
+  background: #eee;
+  padding: 1em;
+  font-size: 0.6em;
+  p{
+    margin-bottom: 1em;
+  }
+}
+.option__body{
+  padding: 1em;
+  font-size: 0.6em;
+  p,dl{
+    margin-bottom: 1em;
+  }
+  dt{
+    font-weight: bold;
+  }
+  dd{
+    margin: 0;
+  }
+}
