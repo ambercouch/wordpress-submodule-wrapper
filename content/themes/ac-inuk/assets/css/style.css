@@ -39,31 +39,37 @@
  * Place any variables that should override inuit.cssÔÇÖ defaults here.
  */
 /*------------------------------------*\
+    $FONT-SIZES
+\*------------------------------------*/
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ */
+/*------------------------------------*\
     $CUSTOM
 \*------------------------------------*/
 /**
  * Place any of your own variables that sit on top of inuit.css here.
  */
 /*
-@color-primary-0: #204875;	 Main Primary color 
+@color-primary-0: #204875;	 Main Primary color
 @color-primary-1: #5578A0;
 @color-primary-2: #355C88;
 @color-primary-3: #0F355F;
 @color-primary-4: #042244;
 
-@color-secondary-1-0: #B34C26;	 Main Secondary color (1) 
+@color-secondary-1-0: #B34C26;	 Main Secondary color (1)
 @color-secondary-1-1: #F59A78;
 @color-secondary-1-2: #D06C46;
 @color-secondary-1-3: #92310D;
 @color-secondary-1-4: #681C00;
 
-@color-primary-0: #186F66; 
+@color-primary-0: #186F66;
 @color-primary-1: #4C9890;
 @color-primary-2: #2C8178;
 @color-primary-3: #085A52;
 @color-primary-4: #004039;
 
-@color-complement-0: #B37B26;	 Main Complement color 
+@color-complement-0: #B37B26;	 Main Complement color
 @color-complement-1: #F5C478;
 @color-complement-2: #D09A46;
 @color-complement-3: #925E0D;
@@ -260,6 +266,12 @@
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
 /*------------------------------------*\
+    $BEAUTONS
+\*------------------------------------*/
+/**
+ * Set the background colors for beauton button functions.
+ */
+/*------------------------------------*\
     $QUOTES
 \*------------------------------------*/
 /**
@@ -346,6 +358,17 @@
    `@include truncate(100%);`
  *
  * Where `$truncation-boundary` is a united measurement.
+ */
+/**
+ * Media query for targetting retina devices, e.g.:
+ *
+   .foo{
+       background-image:url(1x.png);
+       @include retina(){
+           background-image:url(2x.png);
+       }
+   }
+ *
  */
 /**
  * CSS arrows!!! But... before you read on, you might want to grab a coffee...
@@ -891,8 +914,8 @@ pre,
 .media,
 .island,
 .islet {
-  margin-bottom: 25px;
-  margin-bottom: 1.47059rem;
+  margin-bottom: 37px;
+  margin-bottom: 1.48rem;
 }
 .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
 ul, .islet ol, .islet dl, .islet
@@ -903,16 +926,16 @@ pre, .islet .form-fields > li, .islet
 .media, .islet
 .island, .islet
 .islet {
-  margin-bottom: 12.5px;
-  margin-bottom: 0.73529rem;
+  margin-bottom: 18.5px;
+  margin-bottom: 0.74rem;
 }
 
 /**
  * Doubled up `margin-bottom` helper class.
  */
 .landmark {
-  margin-bottom: 50px;
-  margin-bottom: 2.94118rem;
+  margin-bottom: 74px;
+  margin-bottom: 2.96rem;
 }
 
 /**
@@ -920,8 +943,8 @@ pre, .islet .form-fields > li, .islet
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-bottom: 23px;
-  margin-bottom: 1.35294rem;
+  margin-bottom: 35px;
+  margin-bottom: 1.4rem;
 }
 
 /**
@@ -929,8 +952,8 @@ hr {
  * by a consistent amount. Define that amount once, here.
  */
 ul, ol, dd {
-  margin-left: 50px;
-  margin-left: 2.94118rem;
+  margin-left: 74px;
+  margin-left: 2.96rem;
 }
 
 /**
@@ -940,7 +963,7 @@ ul, ol, dd {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1.0625em/1.47059 sans-serif;
+  font: 1.5625em/1.48 "source sans pro";
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -956,39 +979,39 @@ html {
  * heading hierarchy.
  */
 h1, .alpha {
-  font-size: 36px;
-  font-size: 2.11765rem;
-  line-height: 1.38889;
+  font-size: 56.25px;
+  font-size: 2.25rem;
+  line-height: 1.31556;
 }
 
-h2, .beta, .branding .branding__description {
-  font-size: 30px;
-  font-size: 1.76471rem;
-  line-height: 1.66667;
+h2, .beta {
+  font-size: 46.875px;
+  font-size: 1.875rem;
+  line-height: 1.57867;
 }
 
-h3, .gamma {
-  font-size: 24px;
-  font-size: 1.41176rem;
-  line-height: 1.04167;
+h3, .gamma, .branding .branding__description {
+  font-size: 37.5px;
+  font-size: 1.5rem;
+  line-height: 1.97333;
 }
 
 h4, .delta {
-  font-size: 20px;
-  font-size: 1.17647rem;
-  line-height: 1.25;
+  font-size: 31.25px;
+  font-size: 1.25rem;
+  line-height: 1.184;
 }
 
 h5, .epsilon, .title--widget {
-  font-size: 16px;
-  font-size: 0.94118rem;
-  line-height: 1.5625;
+  font-size: 25px;
+  font-size: 1rem;
+  line-height: 1.48;
 }
 
 h6, .zeta {
-  font-size: 14px;
-  font-size: 0.82353rem;
-  line-height: 1.78571;
+  font-size: 21.875px;
+  font-size: 0.875rem;
+  line-height: 1.69143;
 }
 
 /**
@@ -1011,20 +1034,20 @@ hgroup .hN {
  */
 .giga {
   font-size: 96px;
-  font-size: 5.64706rem;
-  line-height: 1.04167;
+  font-size: 3.84rem;
+  line-height: 1.15625;
 }
 
 .mega {
   font-size: 72px;
-  font-size: 4.23529rem;
-  line-height: 1.04167;
+  font-size: 2.88rem;
+  line-height: 1.02778;
 }
 
-.kilo, .branding .branding__title {
-  font-size: 48px;
-  font-size: 2.82353rem;
-  line-height: 1.04167;
+.kilo, .branding .branding__title, .title--page-section {
+  font-size: 75px;
+  font-size: 3rem;
+  line-height: 1.48;
 }
 
 /*------------------------------------*\
@@ -1036,9 +1059,9 @@ hgroup .hN {
  */
 .lede,
 .lead {
-  font-size: 19.125px;
+  font-size: 28.125px;
   font-size: 1.125rem;
-  line-height: 1.30719;
+  line-height: 1.31556;
 }
 
 /*------------------------------------*\
@@ -1050,15 +1073,15 @@ hgroup .hN {
 .smallprint, .meta, .meta--footer, .meta--header,
 .milli,
 .widget_calendar {
-  font-size: 12px;
-  font-size: 0.70588rem;
-  line-height: 2.08333;
+  font-size: 18.75px;
+  font-size: 0.75rem;
+  line-height: 1.97333;
 }
 
 .micro {
-  font-size: 10px;
-  font-size: 0.58824rem;
-  line-height: 2.5;
+  font-size: 15.625px;
+  font-size: 0.625rem;
+  line-height: 2.368;
 }
 
 /*------------------------------------*\
@@ -1074,7 +1097,7 @@ hgroup .hN {
  * Inline quotes.
  */
 q {
-  quotes: "‘" "’" "\\201C " "\\201D ";
+  quotes: "\2018" "\2019" "\201C" "\201D";
 }
 q:before {
   content: "\2018";
@@ -1094,10 +1117,10 @@ q q:after {
 }
 
 blockquote {
-  quotes: "\\201C " "\\201D ";
+  quotes: "\201C" "\201D";
 }
 blockquote p:before {
-  content: "\\201C ";
+  content: "\201C";
   content: open-quote;
 }
 blockquote p:after {
@@ -1105,7 +1128,7 @@ blockquote p:after {
   content: no-close-quote;
 }
 blockquote p:last-of-type:after {
-  content: "\\201D ";
+  content: "\201D";
   content: close-quote;
 }
 blockquote q:before {
@@ -1246,20 +1269,20 @@ img[height] {
  */
 .img--right {
   float: right;
-  margin-bottom: 25px;
-  margin-left: 25px;
+  margin-bottom: 37px;
+  margin-left: 37px;
 }
 
 .img--left {
   float: left;
-  margin-right: 25px;
-  margin-bottom: 25px;
+  margin-right: 37px;
+  margin-bottom: 37px;
 }
 
 .img--center {
   display: block;
   margin-right: auto;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   margin-left: auto;
 }
 
@@ -1270,15 +1293,15 @@ img[height] {
  * distort when resized below a certain width. Use with caution.
  */
 .img--short {
-  height: 125px;
+  height: 185px;
 }
 
 .img--medium {
-  height: 250px;
+  height: 370px;
 }
 
 .img--tall {
-  height: 375px;
+  height: 555px;
 }
 
 /**
@@ -1370,13 +1393,13 @@ table {
 
 th,
 td {
-  padding: 6.25px;
+  padding: 9.25px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
   th,
   td {
-    padding: 12.5px;
+    padding: 18.5px;
   }
 }
 
@@ -1523,7 +1546,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 .table--bordered th:empty,
 .table--bordered td:empty {
@@ -1560,7 +1583,7 @@ td {
  *
  */
 fieldset {
-  padding: 25px;
+  padding: 37px;
 }
 
 /**
@@ -1755,14 +1778,18 @@ label,
 
    </div>
  *
+ * The grid system is based on csswizardry-grids: github.com/csswizardry/csswizardry-grids
+ * If you would like to use the full features of csswizardry-grids then you can
+ * simply use it in conjunction with inuit.css as a second library.
+ *
  * Demo: jsfiddle.net/inuitcss/CLYUC
  *
  */
 /**
  * Grid wrapper
  */
-.grid, .header--master__branding {
-  margin-left: -25px;
+.grid, .grid--rev, .page-section__grid--right, .grid--full, .grid--center, .header--master__branding, .page-section__grid--left, .page-section__grid--centre {
+  margin-left: -37px;
   list-style: none;
   margin-bottom: 0;
 }
@@ -1770,18 +1797,51 @@ label,
 /**
  * Very infrequently occuring grid wrappers as children of grid wrappers.
  */
-.grid > .grid, .header--master__branding > .grid, .grid > .header--master__branding, .header--master__branding > .header--master__branding {
+.grid > .grid, .grid--rev > .grid, .page-section__grid--right > .grid, .grid--full > .grid, .grid--center > .grid, .header--master__branding > .grid, .page-section__grid--left > .grid, .page-section__grid--centre > .grid, .grid > .grid--rev, .grid--rev > .grid--rev, .page-section__grid--right > .grid--rev, .grid--full > .grid--rev, .grid--center > .grid--rev, .header--master__branding > .grid--rev, .page-section__grid--left > .grid--rev, .page-section__grid--centre > .grid--rev, .grid > .page-section__grid--right, .grid--rev > .page-section__grid--right, .page-section__grid--right > .page-section__grid--right, .grid--full > .page-section__grid--right, .grid--center > .page-section__grid--right, .header--master__branding > .page-section__grid--right, .page-section__grid--left > .page-section__grid--right, .page-section__grid--centre > .page-section__grid--right, .grid > .grid--full, .grid--rev > .grid--full, .page-section__grid--right > .grid--full, .grid--full > .grid--full, .grid--center > .grid--full, .header--master__branding > .grid--full, .page-section__grid--left > .grid--full, .page-section__grid--centre > .grid--full, .grid > .grid--center, .grid--rev > .grid--center, .page-section__grid--right > .grid--center, .grid--full > .grid--center, .grid--center > .grid--center, .header--master__branding > .grid--center, .page-section__grid--left > .grid--center, .page-section__grid--centre > .grid--center, .grid > .header--master__branding, .grid--rev > .header--master__branding, .page-section__grid--right > .header--master__branding, .grid--full > .header--master__branding, .grid--center > .header--master__branding, .header--master__branding > .header--master__branding, .page-section__grid--left > .header--master__branding, .page-section__grid--centre > .header--master__branding, .grid > .page-section__grid--left, .grid--rev > .page-section__grid--left, .page-section__grid--right > .page-section__grid--left, .grid--full > .page-section__grid--left, .grid--center > .page-section__grid--left, .header--master__branding > .page-section__grid--left, .page-section__grid--left > .page-section__grid--left, .page-section__grid--centre > .page-section__grid--left, .grid > .page-section__grid--centre, .grid--rev > .page-section__grid--centre, .page-section__grid--right > .page-section__grid--centre, .grid--full > .page-section__grid--centre, .grid--center > .page-section__grid--centre, .header--master__branding > .page-section__grid--centre, .page-section__grid--left > .page-section__grid--centre, .page-section__grid--centre > .page-section__grid--centre {
   margin-left: 0;
 }
 
 /**
  * Grid
  */
-.grid__item, .grid > *, .header--master__branding > * {
+.grid__item, .grid > *, .grid--rev > *, .page-section__grid--right > *, .grid--full > *, .grid--center > *, .header--master__branding > *, .page-section__grid--left > *, .page-section__grid--centre > * {
   display: inline-block;
   width: 100%;
-  padding-left: 25px;
+  padding-left: 37px;
   vertical-align: top;
+}
+
+/**
+ * Reversed grids
+ */
+.grid--rev, .page-section__grid--right {
+  direction: rtl;
+  text-align: right;
+}
+.grid--rev > .grid__item, .page-section__grid--right > .grid__item, .grid--rev > *, .page-section__grid--right > * {
+  direction: ltr;
+  text-align: left;
+}
+
+/**
+ * Gutterless grids have all the properties of regular grids, minus any spacing.
+ */
+.grid--full {
+  margin-left: 0;
+}
+.grid--full > .grid__item, .grid--full > * {
+  padding-left: 0;
+}
+
+/**
+ * Centered grids align grid items centrally without needing to use push or pull
+ * classes.
+ */
+.grid--center {
+  text-align: center;
+}
+.grid--center > .grid__item, .grid--center > * {
+  text-align: left;
 }
 
 /*------------------------------------*\
@@ -1874,7 +1934,7 @@ label,
   word-spacing: normal;
 }
 .nav--block > li > a, .header--master__widget-area .menu > li > a, .header--master__widget-area .menu--site > li > a, .header--master__widget-area .menu--site__menu-list > li > a, .menu--site__menu-list > li > a {
-  padding: 12.5px;
+  padding: 18.5px;
 }
 
 /**
@@ -1914,6 +1974,42 @@ label,
   display: none;
 }
 
+/*------------------------------------*\
+    $THIS-OR-THIS
+\*------------------------------------*/
+/**
+ * Simple options object to provide multiple choices, e.g.:
+ *
+   <h1 class=this-or-this>
+       <a href=# class="this-or-this__this  two-fifths">
+           Free
+       </a>
+       <span class="this-or-this__or  one-fifth">
+           or
+       </span>
+       <a href=# class="this-or-this__this  two-fifths">
+           Pro
+       </a>
+   </h1>
+ *
+ * The `.this-or-this__this` and `.this-or-this__or` objects can be sized using
+ * the grid-system classes.
+ *
+ * Demo: jsfiddle.net/inuitcss/R3sks
+ *
+ */
+.this-or-this {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.this-or-this__this,
+.this-or-this__or {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /**
  * Style trumps; helper and brand classes
  */
@@ -1935,7 +2031,7 @@ label,
 .content__post-archive,
 .content__single-post,
 .content__single-page,
-.content__search-list, .content__widget-area {
+.content__search-list, .content__widget-area, .page-section__grid--centre .page-section__text {
   width: 100%;
 }
 
@@ -2587,11 +2683,11 @@ label,
   /**
   * Thirds
   */
-  .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
+  .desk-one-third, .desk-two-sixths, .desk-four-twelfths, .page-section__thumbnail {
     width: 33.333%;
   }
 
-  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
+  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths, .page-section__text {
     width: 66.666%;
   }
 
@@ -2723,12 +2819,12 @@ label,
  * any element using a handy helper class.
  */
 .brand {
-  font-family: Helvetica Neue, sans-serif!important;
+  font-family: "Helvetica Neue", sans-serif!important;
   color: #4a8ec2!important;
 }
 
 .brand-face {
-  font-family: Helvetica Neue, sans-serif!important;
+  font-family: "Helvetica Neue", sans-serif!important;
 }
 
 .brand-color,
@@ -2797,63 +2893,63 @@ label,
  * Add/remove margins
  */
 .push {
-  margin: 25px !important;
+  margin: 37px !important;
 }
 
 .push--top {
-  margin-top: 25px !important;
+  margin-top: 37px !important;
 }
 
 .push--right {
-  margin-right: 25px !important;
+  margin-right: 37px !important;
 }
 
 .push--bottom {
-  margin-bottom: 25px !important;
+  margin-bottom: 37px !important;
 }
 
 .push--left {
-  margin-left: 25px !important;
+  margin-left: 37px !important;
 }
 
 .push--ends {
-  margin-top: 25px !important;
-  margin-bottom: 25px !important;
+  margin-top: 37px !important;
+  margin-bottom: 37px !important;
 }
 
 .push--sides {
-  margin-right: 25px !important;
-  margin-left: 25px !important;
+  margin-right: 37px !important;
+  margin-left: 37px !important;
 }
 
 .push-half {
-  margin: 12.5px !important;
+  margin: 18.5px !important;
 }
 
 .push-half--top {
-  margin-top: 12.5px !important;
+  margin-top: 18.5px !important;
 }
 
 .push-half--right {
-  margin-right: 12.5px !important;
+  margin-right: 18.5px !important;
 }
 
 .push-half--bottom {
-  margin-bottom: 12.5px !important;
+  margin-bottom: 18.5px !important;
 }
 
 .push-half--left {
-  margin-left: 12.5px !important;
+  margin-left: 18.5px !important;
 }
 
 .push-half--ends {
-  margin-top: 12.5px !important;
-  margin-bottom: 12.5px !important;
+  margin-top: 18.5px !important;
+  margin-bottom: 18.5px !important;
 }
 
 .push-half--sides {
-  margin-right: 12.5px !important;
-  margin-left: 12.5px !important;
+  margin-right: 18.5px !important;
+  margin-left: 18.5px !important;
 }
 
 .flush {
@@ -2890,63 +2986,63 @@ label,
  * Add/remove paddings
  */
 .soft {
-  padding: 25px !important;
+  padding: 37px !important;
 }
 
 .soft--top {
-  padding-top: 25px !important;
+  padding-top: 37px !important;
 }
 
 .soft--right {
-  padding-right: 25px !important;
+  padding-right: 37px !important;
 }
 
 .soft--bottom {
-  padding-bottom: 25px !important;
+  padding-bottom: 37px !important;
 }
 
 .soft--left {
-  padding-left: 25px !important;
+  padding-left: 37px !important;
 }
 
 .soft--ends {
-  padding-top: 25px !important;
-  padding-bottom: 25px !important;
+  padding-top: 37px !important;
+  padding-bottom: 37px !important;
 }
 
 .soft--sides {
-  padding-right: 25px !important;
-  padding-left: 25px !important;
+  padding-right: 37px !important;
+  padding-left: 37px !important;
 }
 
 .soft-half {
-  padding: 12.5px !important;
+  padding: 18.5px !important;
 }
 
 .soft-half--top {
-  padding-top: 12.5px !important;
+  padding-top: 18.5px !important;
 }
 
 .soft-half--right {
-  padding-right: 12.5px !important;
+  padding-right: 18.5px !important;
 }
 
 .soft-half--bottom {
-  padding-bottom: 12.5px !important;
+  padding-bottom: 18.5px !important;
 }
 
 .soft-half--left {
-  padding-left: 12.5px !important;
+  padding-left: 18.5px !important;
 }
 
 .soft-half--ends {
-  padding-top: 12.5px !important;
-  padding-bottom: 12.5px !important;
+  padding-top: 18.5px !important;
+  padding-bottom: 18.5px !important;
 }
 
 .soft-half--sides {
-  padding-right: 12.5px !important;
-  padding-left: 12.5px !important;
+  padding-right: 18.5px !important;
+  padding-left: 18.5px !important;
 }
 
 .hard {
@@ -2983,12 +3079,12 @@ label,
  * Pull items full width of `.island` parents.
  */
 .full-bleed {
-  margin-right: -25px !important;
-  margin-left: -25px !important;
+  margin-right: -37px !important;
+  margin-left: -37px !important;
 }
 .islet .full-bleed {
-  margin-right: -12.5px !important;
-  margin-left: -12.5px !important;
+  margin-right: -18.5px !important;
+  margin-left: -18.5px !important;
 }
 
 /**
@@ -3024,7 +3120,7 @@ label,
  *
  */
 .go:after {
-  content: " " "»" !important;
+  content: "\00A0" "\00BB" !important;
 }
 
 /**
@@ -3138,11 +3234,11 @@ label,
  *
  */
 html {
-  font: 0.95625em/1.47059 sans-serif;
+  font: 1.40625em/1.48 "source sans pro";
 }
 @media only screen and (min-width: 481px) {
   html {
-    font: 1.0625em/1.47059 sans-serif;
+    font: 1.5625em/1.48 "source sans pro";
   }
 }
 
@@ -3159,8 +3255,8 @@ body {
   width: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 12.5px;
-  padding-right: 12.5px;
+  padding-left: 18.5px;
+  padding-right: 18.5px;
 }
 @media only screen and (min-width: 1024px) {
   .container, .header--master, .navigation--main, .footer--master, .page-section__content {
@@ -3178,7 +3274,7 @@ body {
  * Set relative bottom margin
  */
 h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 0.75em;
+  margin-bottom: 0em;
 }
 
 /*------------------------------------*\
@@ -3205,95 +3301,95 @@ h1, h2, h3, h4, h5, h6 {
  * decreases slightly
  */
 h1, .alpha {
-  font-size: 24px;
-  font-size: 1.41176rem;
-  line-height: 1.38889;
+  font-size: 37.5px;
+  font-size: 1.5rem;
+  line-height: 1.31556;
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   h1, .alpha {
-    font-size: 27.69231px;
-    font-size: 1.62896rem;
-    line-height: 1.38889;
+    font-size: 43.26923px;
+    font-size: 1.73077rem;
+    line-height: 1.31556;
   }
 }
 @media only screen and (min-width: 1024px) {
   h1, .alpha {
-    font-size: 36px;
-    font-size: 2.11765rem;
-    line-height: 1.38889;
+    font-size: 56.25px;
+    font-size: 2.25rem;
+    line-height: 1.31556;
   }
 }
 
-h2, .beta, .branding .branding__description {
-  font-size: 21.42857px;
-  font-size: 1.2605rem;
-  line-height: 1.66667;
+h2, .beta {
+  font-size: 33.48214px;
+  font-size: 1.33929rem;
+  line-height: 1.57867;
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  h2, .beta, .branding .branding__description {
-    font-size: 25px;
-    font-size: 1.47059rem;
-    line-height: 1.66667;
+  h2, .beta {
+    font-size: 39.0625px;
+    font-size: 1.5625rem;
+    line-height: 1.57867;
   }
 }
 @media only screen and (min-width: 1024px) {
-  h2, .beta, .branding .branding__description {
-    font-size: 30px;
-    font-size: 1.76471rem;
-    line-height: 1.66667;
+  h2, .beta {
+    font-size: 46.875px;
+    font-size: 1.875rem;
+    line-height: 1.57867;
   }
 }
 
-h3, .gamma {
-  font-size: 18.46154px;
-  font-size: 1.08597rem;
-  line-height: 1.04167;
+h3, .gamma, .branding .branding__description {
+  font-size: 28.84615px;
+  font-size: 1.15385rem;
+  line-height: 1.97333;
 }
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
-  h3, .gamma {
-    font-size: 21.81818px;
-    font-size: 1.28342rem;
-    line-height: 1.04167;
+  h3, .gamma, .branding .branding__description {
+    font-size: 34.09091px;
+    font-size: 1.36364rem;
+    line-height: 1.97333;
   }
 }
 @media only screen and (min-width: 1024px) {
-  h3, .gamma {
-    font-size: 24px;
-    font-size: 1.41176rem;
-    line-height: 1.04167;
+  h3, .gamma, .branding .branding__description {
+    font-size: 37.5px;
+    font-size: 1.5rem;
+    line-height: 1.97333;
   }
 }
 
 h4, .delta {
-  font-size: 16.66667px;
-  font-size: 0.98039rem;
-  line-height: 1.25;
+  font-size: 26.04167px;
+  font-size: 1.04167rem;
+  line-height: 1.184;
 }
 @media only screen and (min-width: 481px) {
   h4, .delta {
-    font-size: 20px;
-    font-size: 1.17647rem;
-    line-height: 1.25;
+    font-size: 31.25px;
+    font-size: 1.25rem;
+    line-height: 1.184;
   }
 }
 
 h5, .epsilon, .title--widget, .test {
-  font-size: 14.54545px;
-  font-size: 0.85561rem;
-  line-height: 1.5625;
+  font-size: 22.72727px;
+  font-size: 0.90909rem;
+  line-height: 1.48;
 }
 @media only screen and (min-width: 481px) {
   h5, .epsilon, .title--widget, .test {
-    font-size: 16px;
-    font-size: 0.94118rem;
-    line-height: 1.5625;
+    font-size: 25px;
+    font-size: 1rem;
+    line-height: 1.48;
   }
 }
 
 h6, .zeta {
-  font-size: 14px;
-  font-size: 0.82353rem;
-  line-height: 1.78571;
+  font-size: 21.875px;
+  font-size: 0.875rem;
+  line-height: 1.69143;
 }
 
 /**
@@ -3301,25 +3397,25 @@ h6, .zeta {
  * .grid styles
  *
  */
-.grid, .header--master__branding {
+.grid, .grid--rev, .page-section__grid--right, .grid--full, .grid--center, .header--master__branding, .page-section__grid--left, .page-section__grid--centre {
   /* set the font size to 0 to fix the inline block white space issue (doesn't work on old android')*/
   font-size: 0;
 }
-.grid > *, .header--master__branding > * {
+.grid > *, .grid--rev > *, .page-section__grid--right > *, .grid--full > *, .grid--center > *, .header--master__branding > *, .page-section__grid--left > *, .page-section__grid--centre > * {
   /* Don't need to use the grid item class any more */
   /* reset to the base font size */
-  font-size: 17px;
+  font-size: 25px;
   /* use rem if supported */
   font-size: 1rem;
 }
-.grid > * > *, .header--master__branding > * > * {
+.grid > * > *, .grid--rev > * > *, .page-section__grid--right > * > *, .grid--full > * > *, .grid--center > * > *, .header--master__branding > * > *, .page-section__grid--left > * > *, .page-section__grid--centre > * > * {
   /* if rems not supported resize the text now */
   font-size: 90%;
   /* if rems is supported reset */
   font-size: 1rem;
 }
 @media only screen and (min-width: 481px) {
-  .grid > * > *, .header--master__branding > * > * {
+  .grid > * > *, .grid--rev > * > *, .page-section__grid--right > * > *, .grid--full > * > *, .grid--center > * > *, .header--master__branding > * > *, .page-section__grid--left > * > *, .page-section__grid--centre > * > * {
     font-size: 100%;
   }
 }
@@ -3330,20 +3426,20 @@ h6, .zeta {
 }
 
 .site__header--master {
-  padding: 0 0 25px 0;
+  padding: 0 0 37px 0;
   overflow: hidden;
 }
 
 .site__navigation--main {
-  background: #bbb;
+  background: #bbbbbb;
 }
 
 .site__content {
-  padding: 25px 0 0;
+  padding: 37px 0 0;
 }
 
 .site__footer {
-  padding: 25px 0;
+  padding: 37px 0;
   background: #004039;
 }
 
@@ -3406,10 +3502,11 @@ h6, .zeta {
   font-weight: normal;
   border-top: dotted #fff 1px;
   border-bottom: dotted #fff 1px;
-  padding: 0.2em;
-  margin: 0 auto 25px;
+  padding: 0;
+  margin: 0 auto 18.5px;
   width: 75%;
   text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .navigation, .navigation--main {
@@ -3453,8 +3550,8 @@ h6, .zeta {
 }
 .menu--site__menu-list a {
   text-decoration: none;
-  color: #000;
-  background: #bbb;
+  color: black;
+  background: #bbbbbb;
   text-decoration: none !important;
 }
 .menu--site__menu-list a:hover {
@@ -3480,23 +3577,23 @@ h6, .zeta {
 **/
 .post {
   position: relative;
-  padding: 12.5px;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
-  border-bottom: solid 1px #bbb;
+  padding: 18.5px;
+  padding-bottom: 37px;
+  margin-bottom: 37px;
+  border-bottom: solid 1px #bbbbbb;
 }
 .post .post__header {
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 }
 @media only screen and (min-width: 1024px) {
   .post .post__header {
     padding-left: 20%;
   }
 }
-.post .post__header .title, .post .post__header .title--article, .post .post__header .title--widget {
+.post .post__header .title, .post .post__header .title--article, .post .post__header .title--widget, .post .post__header .title--page-section {
   margin-bottom: 0;
 }
-.post .post__header .title a, .post .post__header .title--article a, .post .post__header .title--widget a {
+.post .post__header .title a, .post .post__header .title--article a, .post .post__header .title--widget a, .post .post__header .title--page-section a {
   text-decoration: none;
 }
 @media only screen and (min-width: 1024px) {
@@ -3545,11 +3642,11 @@ h6, .zeta {
 }
 .post img.alignleft, .page img.alignleft, .post .wp-caption.alignleft, .page .wp-caption.alignleft {
   float: left;
-  margin-right: 12.5px;
+  margin-right: 18.5px;
 }
 .post img.alignright, .page img.alignright, .post .wp-caption.alignright, .page .wp-caption.alignright {
   float: right;
-  margin-left: 12.5px;
+  margin-left: 18.5px;
 }
 .post img.aligncenter, .page img.aligncenter, .post .wp-caption.aligncenter, .page .wp-caption.aligncenter {
   margin: 0 auto;
@@ -3586,7 +3683,7 @@ h6, .zeta {
  * Just a base class to extend all modifiers
  * Remove the margin and uderline
  */
-.title, .title--article, .title--widget {
+.title, .title--article, .title--widget, .title--page-section {
   text-decoration: none;
   margin-bottom: 0;
 }
@@ -3596,7 +3693,7 @@ h6, .zeta {
   color: #204875;
 }
 .title--article:hover {
-  color: #000;
+  color: black;
 }
 
 /* colours and size for the widget titles */
@@ -3619,7 +3716,7 @@ h6, .zeta {
  *
  */
 .widget {
-  margin-bottom: 12.5px;
+  margin-bottom: 18.5px;
 }
 
 /**
@@ -3652,12 +3749,12 @@ and open the template in the editor.
 }
 
 .navigation--main__menu .multi-dropdown ul, .navigation--main__menu .menu--site__menu-list ul {
-  background: #bbb;
+  background: #bbbbbb;
   z-index: 999;
 }
 .navigation--main__menu .multi-dropdown ul li a, .navigation--main__menu .menu--site__menu-list ul li a {
   display: block;
-  padding: 12.5px;
+  padding: 18.5px;
 }
 
 /*
@@ -3665,27 +3762,70 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 08-Dec-2014, 15:09:56
     Author     : Richard
 */
 .page-section__content {
-  padding: 25px 0;
+  padding: 222px 0 111px;
+}
+
+.page-section__grid--centre {
+  text-align: center;
+}
+
+.page-section__thumbnail img {
+  width: 100%;
 }
 
 .background--brand-col-1 {
-  background: #000;
+  background: black;
   color: white;
 }
 
 .background--brand-col-2 {
-  background: #5578A0;
+  background: #5578a0;
   color: white;
 }
 
 .background--brand-col-3 {
-  background: #4C9890;
+  background: #4c9890;
   color: white;
+}
+
+.options {
+  margin-top: 37px;
+}
+.options .this-or-this__this {
+  vertical-align: top;
+}
+
+.option {
+  background: white;
+  color: #333;
+}
+
+.option__header {
+  background: #eee;
+  padding: 1em;
+  font-size: 0.6em;
+}
+.option__header p {
+  margin-bottom: 1em;
+}
+
+.option__body {
+  padding: 1em;
+  font-size: 0.6em;
+}
+.option__body p, .option__body dl {
+  margin-bottom: 1em;
+}
+.option__body dt {
+  font-weight: bold;
+}
+.option__body dd {
+  margin: 0;
 }
 
 .menu--site .menu--responsive-toggle__toggle {
@@ -3874,5 +4014,3 @@ removes max-widths from p that have no text node
   -ms-user-select: none;
   user-select: none;
 }
-
-/*# sourceMappingURL=style.css.map */

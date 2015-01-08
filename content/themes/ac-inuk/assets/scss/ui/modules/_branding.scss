@@ -14,16 +14,16 @@
     }
   }
   .branding__description{
-    @extend .beta;
+    @extend .gamma;
     color: white;
     font-weight: normal;
     border-top: dotted #fff 1px;
     border-bottom: dotted #fff 1px;
-    padding: 0.2em;
-    margin: 0 auto $base-spacing-unit;
+    padding: 0;
+    margin: 0 auto $base-spacing-unit / 2;
     width: 75%;
     text-transform: uppercase;
-    
+    letter-spacing: 0.1em
   }
 }
 

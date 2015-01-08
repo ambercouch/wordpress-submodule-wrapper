@@ -27,3 +27,7 @@
   color: $brand-col-2;
 
 }
+.title--page-section{
+  @extend .title;
+  @extend .kilo;
+}

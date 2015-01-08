@@ -1,31 +1,31 @@
 ACINUK = {
   common: {
-    init: function() {
+    init: function () {
       console.log('common');
-      
+
       var $win = jQuery(window),
-          win_height = $win.height(),
-          $header = jQuery('.header--master'),
-          header_height = $header.height(),
-          header_top = (win_height / 2) - (header_height / 2);
-      
+              win_height = $win.height(),
+              $header = jQuery('.header--master'),
+              header_height = $header.height(),
+              header_top = (win_height / 2.4) - (header_height / 2);
+
       //set header height
       jQuery('#masthead').height(win_height);
       $header.css('margin-top', header_top);
-      
+
       //add vegas bg
-      $(function() {
+      $(function () {
         $.vegas({
-          src:'/content/themes/ac-inuk/assets/images/vegas/background.jpg'
+          src: '/content/themes/ac-inuk/assets/images/vegas/background.jpg'
         })('overlay', {
-        src:'/content/themes/ac-inuk/assets/images/vegas/overlays/13.png'
+          src: '/content/themes/ac-inuk/assets/images/vegas/overlays/13.png'
         });
       });
-      
-      
-      
-      
-      jQuery(window).on('resize', function(){
+
+
+
+
+      jQuery(window).on('resize', function () {
         win_height = $win.height();
         header_height = $header.height();
         header_top = (win_height / 2) - (header_height / 2);
@@ -41,7 +41,7 @@ ACINUK = {
 
         $clone_nav.prependTo('body');
 
-        els = jQuery('#nav-responsive *').each(function() {
+        els = jQuery('#nav-responsive *').each(function () {
           if (jQuery(this).attr('id')) {
             id = jQuery(this).attr('id');
             jQuery(this).attr('id', id + '-clone');
@@ -66,7 +66,7 @@ ACINUK = {
         jQuery('body').css('margin-top', container_height);
       }
 
-      $menulink.click(function() {
+      $menulink.click(function () {
 
         $menulink.toggleClass('active');
         $menu.toggleClass('active');
@@ -75,7 +75,7 @@ ACINUK = {
         return false;
       });
 
-      jQuery('p').each(function(i) {
+      jQuery('p').each(function (i) {
         if (jQuery(this).text() == '') {
           jQuery(this).addClass('is-empty');
         }
@@ -84,18 +84,18 @@ ACINUK = {
     }
   },
   page: {
-    init: function() {
+    init: function () {
       console.log('all pages');
     }
   },
   post: {
-    init: function() {
+    init: function () {
       console.log('all posts');
     }
   }
 };
 UTIL = {
-  exec: function(template, handle) {
+  exec: function (template, handle) {
     var ns = ACINUK,
             handle = (handle === undefined) ? "init" : handle;
 
@@ -103,7 +103,7 @@ UTIL = {
       ns[template][handle]();
     }
   },
-  init: function() {
+  init: function () {
     var body = document.body,
             template = body.getAttribute('data-post-type'),
             handle = body.getAttribute('data-post-slug');
