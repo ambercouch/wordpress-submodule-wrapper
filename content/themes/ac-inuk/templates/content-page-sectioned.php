@@ -32,7 +32,7 @@
             </header><!-- /.page__header -->
 
             <div class="page-section__body">
-              <?php echo wpautop($section->post_content); ?>
+              <?php echo wpautop(do_shortcode($section->post_content)); ?>
             </div><!-- /.page-section__content -->
           </div><!-- /.two-thirds -->
         </div>

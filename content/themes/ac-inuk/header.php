@@ -47,6 +47,9 @@
   </head>
 
   <body <?php body_class(); ?> <?php ac_body_data(); ?>>
+    <div style="display:none;">
+      <?php include_once("assets/images/defs.svg"); ?>
+    </div>
     <?php // (AC_MENU_ABOVE_HEADER === TRUE) ? get_template_part('templates/snippets/site__navigation--main') : ''; ?>
     <div id="page" class="hfeed site">
       <?php do_action('before'); ?>

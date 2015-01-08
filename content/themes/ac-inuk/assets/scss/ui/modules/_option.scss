@@ -6,8 +6,17 @@
 
 }
 .option{
+  transition: box-shadow 0.3s ease,
+    width 0.3s ease,
+    font-size 0.3s ease;
   background: white;
   color:#333;
+  box-shadow: none;
+  &:hover{
+    box-shadow: 0 1px 5px rgba(#000, 0.5);
+    width: 85%;
+    font-size: 1.05em;
+  }
 
 }
 .option__header{
@@ -19,11 +28,11 @@
     margin-bottom: 1em;
   }
 }
-.options__price-info{
+.option__price-info{
   font-size: 1.2em;
   margin-bottom: 1em;
 }
-.options__price--month{
+.option__price--month{
   display: block;
   font-size: 2em;
   margin-bottom: 0.2em;
@@ -31,11 +40,11 @@
     font-size: 60%;
   }
 }
-.options__billing{
+.option__billing{
   display: block;
   margin-bottom: 0.5em;
 }
-.options__price--setup{
+.option__price--setup{
   font-size: 1.2em;
   display: block;
   small{
@@ -56,6 +65,7 @@
   }
 
   dl{
+    position: relative;
     transition: background 0.3s ease;
     background: transparent;
     border: dashed 1px #ccc;
@@ -66,4 +76,12 @@
     padding: 0.4em 0;
     background: #eee;
   }
+}
+.option__icon{
+  height: 1.2em;
+  left: 0.5em;
+  position: absolute;
+  top: 0.5em;
+  width: 1.2em;
+  fill: $mynt-red--dark;
 }
