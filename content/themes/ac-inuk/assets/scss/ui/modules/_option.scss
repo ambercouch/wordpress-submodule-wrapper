@@ -14,8 +14,32 @@
   background: #eee;
   padding: 1em;
   font-size: 0.6em;
+  border-bottom: solid 1px #ccc;
   p{
     margin-bottom: 1em;
+  }
+}
+.options__price-info{
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.options__price--month{
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0.2em;
+  small{
+    font-size: 60%;
+  }
+}
+.options__billing{
+  display: block;
+  margin-bottom: 0.5em;
+}
+.options__price--setup{
+  font-size: 1.2em;
+  display: block;
+  small{
+    font-size: 60%;
   }
 }
 .option__body{
@@ -29,5 +53,17 @@
   }
   dd{
     margin: 0;
+  }
+
+  dl{
+    transition: background 0.3s ease;
+    background: transparent;
+    border: dashed 1px #ccc;
+    padding: 0.4em 0;
+  }
+  dl:hover{
+    border: solid 1px #ddd;
+    padding: 0.4em 0;
+    background: #eee;
   }
 }
