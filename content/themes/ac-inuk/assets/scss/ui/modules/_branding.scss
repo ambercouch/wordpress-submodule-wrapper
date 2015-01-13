@@ -17,8 +17,8 @@
     @extend .gamma;
     color: white;
     font-weight: normal;
-    border-top: dotted #fff 1px;
-    border-bottom: dotted #fff 1px;
+    border-top: solid $brand-col-3--light 2px;
+    border-bottom: solid $brand-col-3--light 2px;
     padding: 0;
     margin: 0 auto $base-spacing-unit / 2;
     width: 75%;

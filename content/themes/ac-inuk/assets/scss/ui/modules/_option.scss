@@ -3,27 +3,43 @@
   .this-or-this__this{
     vertical-align: top;
   }
+  > div{
+    @extend .lap-and-up-one-third;
+    @include media-query(palm){
+      display: block;
+    }
+  }
 
 }
 .option{
+  @extend .desk-four-fifths;
   transition: box-shadow 0.3s ease,
     width 0.3s ease,
     font-size 0.3s ease;
   background: white;
   color:#333;
   box-shadow: none;
-  &:hover{
-    box-shadow: 0 1px 5px rgba(#000, 0.5);
-    width: 85%;
-    font-size: 1.05em;
+  opacity: 0.9;
+  border-radius: 30px 30px 0 30px;
+  @include media-query(desk){
+    opacity: 1;
   }
+  &:hover{
+    opacity: 1;
+    @include media-query(desk){
+      width: 85%;
+      box-shadow: 0 1px 5px rgba(#000, 0.5);
+      font-size: 1.05em;
+    }
 
+  }
 }
 .option__header{
   background: #eee;
   padding: 1em;
   font-size: 0.6em;
   border-bottom: solid 1px #ccc;
+  border-radius: 30px 30px 0 0;
   p{
     margin-bottom: 1em;
   }

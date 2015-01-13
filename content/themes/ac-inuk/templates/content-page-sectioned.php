@@ -10,9 +10,9 @@
   <?php while (have_rows('section')) : the_row(); ?>
     <?php $section = get_sub_field('page'); ?>
 
-    <?php // print_R(get_sub_field('page')); ?>
+    <?php //print_r(get_sub_field('page')); ?>
 
-    <section class="align--<?php the_sub_field('align') ?> page-section--id-<?php echo $section->ID ?> background--<?php the_sub_field('background_class') ?>">
+    <section id="page_id<?php echo $section->ID ?>" data-jsslug="<?php echo $section->post_name; ?>" class="align--<?php the_sub_field('align') ?> page-section--id-<?php echo $section->ID ?> background--<?php the_sub_field('background_class') ?>">
       <article class="page-section__content" id="post-<?php echo $section->ID; ?>" >
         <div class="page-section__grid--<?php the_sub_field('align') ?>">
           <?php if (get_the_post_thumbnail($section->ID)) : ?>

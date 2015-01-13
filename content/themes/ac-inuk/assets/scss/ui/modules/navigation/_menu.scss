@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 13-Jan-2015, 13:08:15
+    Author     : Richard
+*/
+
+%menu--button-style-1{
+  @extend .nav--block;
+  a{
+    text-decoration: none;
+    color: white;
+    border:solid 1px;
+    margin: 0 0.5em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px rgba(black, 0.6);
+    background: rgba(black, 0.2);
+    font-size: 0.7em;
+    &:hover{
+      background: $brand-col-3;
+    }
+  }
+  > li{
+    display: block;
+    margin-bottom: 0.25em;
+    a{
+      display: block;
+    }
+  }
+  @include media-query(lap-and-up){
+    white-space: normal;
+    > li{
+      display: inline-block;
+      margin-bottom: 0.25em;
+      a{
+        display: block;
+      }
+    }
+  }
+  @include media-query(lap){
+    white-space: normal;
+    > li{
+      width:50%;
+    }
+  }
+}

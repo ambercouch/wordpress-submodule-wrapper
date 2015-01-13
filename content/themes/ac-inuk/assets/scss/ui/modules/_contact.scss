@@ -1,0 +1,52 @@
+.contact{
+  width:700px;
+  max-width: 100%;
+  margin: 0 auto;
+  input{
+    width: 100%;
+  }
+  label{
+    text-align: left;
+  }
+  [type="text"],[type="email"]{
+    border-radius: $brand-round $brand-round 0 $brand-round;
+    border:none;
+    @include x-rem(padding, 0.5);
+  }
+  input:focus + [role="alert"]{
+    display: none;
+  }
+}
+.contact__row{
+  font-size: 0;
+  @include x-rem(margin-bottom, 0.25);
+  >*{
+    @include x-rem(font-size, 1);
+  }
+  .wpcf7-form-control-wrap{
+    width: 100%;
+  }
+}
+.contact__field{
+  display: inline-block;
+  width: 50%;
+  @include x-rem(font-size, 1);
+}
+.contact__field--fname{
+  @include x-rem(padding-right, 1);
+}
+
+.contact__field--lname{
+  @include x-rem(padding-left, 1);
+}
+
+.contact [type="submit"]{
+  @extend .btn;
+  border-radius: $brand-round $brand-round 0 $brand-round;
+  @include x-rem(font-size, 1);
+  @include x-rem(margin-top, 1.5);
+  line-height: 2;
+  color: #fff;
+  background: $brand-col-2--light
+}
+

@@ -42,7 +42,7 @@ $use-flyout:        false;
 $use-arrows:        false;
 $use-sprite:        false;
 $use-icon-text:     false;
-$use-beautons:      false;
+$use-beautons:      true;
 $use-lozenges:      false;
 $use-rules:         false;
 $use-stats:         false;
@@ -60,8 +60,8 @@ $base-font-family:  'source sans pro';
  * Place any variables that should override inuit.css’ defaults here.
  */
 
-$base-font-size:    25px;
-$base-line-height:  37px;
+$base-font-size:    24px;
+$base-line-height:  29px;
 
 /*------------------------------------*\
     $FONT-SIZES
@@ -106,11 +106,14 @@ RED
 @color-secondary-1-4: #681C00;
 
 GREEN
-@color-primary-0: #186F66;
-@color-primary-1: #4C9890;
-@color-primary-2: #2C8178;
-@color-primary-3: #085A52;
-@color-primary-4: #004039;
+********
+myntmedia Green #186f66;
+********
+@color-secondary-2-0: #1A7C4F; Main Secondary color (2)
+@color-secondary-2-1: #53A982;
+@color-secondary-2-2: #319065;
+@color-secondary-2-3: #09653B;
+@color-secondary-2-4: #004827;
 
 @color-complement-0: #B37B26;	 Main Complement color
 @color-complement-1: #F5C478;
@@ -124,8 +127,8 @@ $mynt-blue--light: #5578A0;
 $mynt-blue--dark: #042244;
 
 $mynt-green: #186f66;
-$mynt-green--light: #F59A78;
-$mynt-green--dark: #004039;
+$mynt-green--light: #53A982;
+$mynt-green--dark: #004827;
 
 $mynt-red: #B34C26;
 $mynt-red--light: #B34C26;
@@ -143,3 +146,8 @@ $brand-col-4--light: $mynt-red--light;
 $brand-col-4--dark: $mynt-red--dark;
 $brand-col-5: #B37B26;
 $brand-col-6: #fff;
+
+/**
+ * How big would you like round corners to be by default?
+ */
+$brand-round:        10px!default;

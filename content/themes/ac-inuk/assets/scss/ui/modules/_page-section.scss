@@ -10,7 +10,13 @@ and open the template in the editor.
 
 .page-section__content{
   @extend .container;
-  padding: $base-spacing-unit * 6 0 $base-spacing-unit * 3;
+  padding: $base-spacing-unit  0.5em  ;
+  @include media-query(desk){
+    padding: $base-spacing-unit * 6 0 $base-spacing-unit * 3;
+  }
+  @include headings(){
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  }
 }
 .page-section__grid--left{
   @extend .grid;
@@ -25,6 +31,8 @@ and open the template in the editor.
 
 .page-section__thumbnail{
   @extend .desk-one-third;
+  @extend .lap-one-half;
+
 
 
   img{
@@ -34,6 +42,7 @@ and open the template in the editor.
 }
 .page-section__text{
   @extend .desk-two-thirds;
+  @extend .lap-one-half;
 
   .page-section__grid--centre &{
     @extend .one-whole;

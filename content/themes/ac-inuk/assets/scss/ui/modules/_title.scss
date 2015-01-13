@@ -30,4 +30,13 @@
 .title--page-section{
   @extend .title;
   @extend .kilo;
+  line-height: 1.2;
+  @include media-query(lap){
+    @include inuk-font-size($h1-size);
+    line-height: 1;
+  }
+  @include media-query(lap){
+    @include inuk-font-size($h1-size);
+    line-height: 1;
+  }
 }

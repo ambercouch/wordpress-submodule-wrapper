@@ -1,8 +1,12 @@
 ACINUK = {
   common: {
     init: function () {
-      console.log('common');
 
+      var menu_offset = jQuery('body.admin-bar').length === 1 ? 32 : 0;
+      jQuery('#product-list').sticky({topSpacing: menu_offset});
+
+      console.log('common');
+      //Get header vars
       var $win = jQuery(window),
               win_height = $win.height(),
               $header = jQuery('.header--master'),
@@ -22,9 +26,7 @@ ACINUK = {
         });
       });
 
-
-
-
+      //position header on resize
       jQuery(window).on('resize', function () {
         win_height = $win.height();
         header_height = $header.height();
@@ -34,6 +36,7 @@ ACINUK = {
         $header.css('margin-top', header_top);
       });
 
+      //responsive menus
       if (jQuery('#nav-main').data('responsive-clone')) {
         $clone_nav = jQuery('#nav-main').clone();
         jQuery('#nav-main').clone();
@@ -75,12 +78,30 @@ ACINUK = {
         return false;
       });
 
+      //empty p class to hide wp crazy editor markup
       jQuery('p').each(function (i) {
         if (jQuery(this).text() == '') {
           jQuery(this).addClass('is-empty');
         }
       });
 
+      //section links
+
+      jQuery('a[rel = section]').each(function (i, e) {
+        var href = e.href,
+                href_id = href.substr(href.lastIndexOf('/') + 1),
+                selector = href_id.replace('?', '').replace('=', ''),
+                sectioned = jQuery('#' + selector).length === 1 ? true : false;
+
+        console.log(sectioned === true ? 'a section' : 'no section');
+
+        if (sectioned === true) {
+          e.href = '#' + selector;
+
+          $(e).smoothScroll({offset: 50, easing: 'swing'});
+        }
+
+      });
     }
   },
   page: {

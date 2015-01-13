@@ -45,7 +45,7 @@ module.exports = function (grunt) {
       },
       dist: {
         src: ['assets/vendor/jquery/dist/jquery.min.js'],
-        dest: 'assets/js/script.js',
+        dest: 'assets/js/script.js'
       },
     },
     sass: {// Task
@@ -62,7 +62,11 @@ module.exports = function (grunt) {
     uglify: {
       my_target: {
         files: {
-          'assets/js/plugins.js': ['assets/vendor/vegas/dist/jquery.vegas.js']
+          'assets/js/plugins.js': [
+            'assets/vendor/vegas/dist/jquery.vegas.js',
+            'assets/vendor/jquery-smooth-scroll/jquery.smooth-scroll.min.js',
+            'assets/vendor/sticky/jquery.sticky.js'
+          ]
         }
       }
     },
