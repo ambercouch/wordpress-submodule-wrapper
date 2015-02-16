@@ -2,3 +2,6 @@
 [submodule "cms"]
 	path = cms
 	url = git://github.com/WordPress/WordPress.git
+[submodule "content/themes/_s"]
+	path = content/themes/_s
+	url = https://github.com/ambercouch/_s.git
