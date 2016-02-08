@@ -4,4 +4,4 @@
 	url = git://github.com/WordPress/WordPress.git
 [submodule "content/themes/ac_timber"]
 	path = content/themes/ac_timber
-	url = git@bitbucket.org:ambercouch/ac_timber
+	url = https://github.com/ambercouch/ac_timber.git
